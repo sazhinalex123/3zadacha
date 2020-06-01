@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <malloc.h>
-#include <string.h>
+#include "q.h"
 int stroki_stolbci (const char* filename){
 int  i=0;
 int** arr;
@@ -169,14 +166,14 @@ void autotest(void){
     int u;
    FILE*input_file;
    FILE*output_file;
-   input_file=fopen("zxc.txt","r");
-   stroki_stolbci("zxc.txt");
+   input_file=fopen("qwe.txt","r");
+   stroki_stolbci("qwe.txt");
    output_file=fopen("asd.txt","r");
    fscanf(output_file,"%d",&u);
    printf("u=%d\n",u);
    fclose(output_file);
    fclose(input_file);
-   if(u==1){
+   if(u==2){
        printf("Autotest passed\n");
    }
    else{
@@ -189,5 +186,4 @@ int main(void){
     stroki_stolbci("zxc.txt");
     return 0;
 }
-
 
